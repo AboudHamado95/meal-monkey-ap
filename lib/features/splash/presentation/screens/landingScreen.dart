@@ -77,7 +77,10 @@ class LandingScreen extends StatelessWidget {
                     ),
                     CustomButtonWidget(
                         text: "Create an Account",
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context)
+                              .pushReplacementNamed(Routes.signUpScreen);
+                        },
                         backgroundColor: Colors.white,
                         foregroundColor: AppColors.orange),
                     const Spacer(),

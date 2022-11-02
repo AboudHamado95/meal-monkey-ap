@@ -41,7 +41,7 @@ class ForgetPasswordScreen extends StatelessWidget {
                       text: 'Send',
                       onTap: () {
                         Navigator.of(context)
-                            .pushReplacementNamed(Routes.landingScreen);
+                            .pushReplacementNamed(Routes.sendOtpScreen);
                       },
                       backgroundColor: AppColors.orange,
                       foregroundColor: Colors.white),
