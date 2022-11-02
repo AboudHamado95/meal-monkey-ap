@@ -47,7 +47,7 @@ class LoginScreen extends StatelessWidget {
                       text: 'Login',
                       onTap: () {
                         Navigator.of(context)
-                            .pushReplacementNamed(Routes.landingScreen);
+                            .pushReplacementNamed(Routes.introScreen);
                       },
                       backgroundColor: AppColors.orange,
                       foregroundColor: Colors.white),
