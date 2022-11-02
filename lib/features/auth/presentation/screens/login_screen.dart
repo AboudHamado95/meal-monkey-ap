@@ -83,8 +83,8 @@ class LoginScreen extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {
-                      // Navigator.of(context)
-                      //     .pushReplacementNamed(SignUpScreen.routeName);
+                      Navigator.of(context)
+                          .pushReplacementNamed(Routes.signUpScreen);
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,

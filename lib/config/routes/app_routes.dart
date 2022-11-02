@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meal_monkey/core/utils/app_strings.dart';
 import 'package:meal_monkey/features/auth/presentation/screens/login_screen.dart';
+import 'package:meal_monkey/features/auth/presentation/screens/sign_up_screen.dart';
 import 'package:meal_monkey/features/splash/presentation/screens/landingScreen.dart';
 
 class Routes {
@@ -8,6 +9,7 @@ class Routes {
   static const String homeScreen = '/home_screen';
   static const String landingScreen = '/landing_screen';
   static const String loginScreen = '/login_screen';
+  static const String signUpScreen = '/sign_up_screen';
 }
 
 class AppRoute {
@@ -19,6 +21,9 @@ class AppRoute {
         return materialBuilder(widget: const LandingScreen());
       case Routes.loginScreen:
         return materialBuilder(widget: const LoginScreen());
+
+      case Routes.signUpScreen:
+        return materialBuilder(widget: const SignUpScreen());
 
       default:
         return undefinedRoute();
