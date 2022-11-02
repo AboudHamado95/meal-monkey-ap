@@ -4,6 +4,7 @@ import 'package:meal_monkey/core/utils/app_colors.dart';
 import 'package:meal_monkey/core/utils/assets_manager.dart';
 
 import 'package:meal_monkey/core/utils/dimensions.dart';
+import 'package:meal_monkey/core/widgets/custom_button_widget.dart';
 import 'package:meal_monkey/features/splash/presentation/widgets/custom_clipper_app_bar_widget.dart';
 
 class LandingScreen extends StatelessWidget {
@@ -63,41 +64,22 @@ class LandingScreen extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
                     const Spacer(),
-                    SizedBox(
-                      width: double.infinity,
-                      height: context.height30 * 2,
-                      child: ElevatedButton(
-                        onPressed: () {
+                    CustomButtonWidget(
+                        text: 'Login',
+                        onTap: () {
                           Navigator.of(context)
                               .pushReplacementNamed(Routes.loginScreen);
                         },
-                        child: const Text("Login"),
-                      ),
-                    ),
+                        backgroundColor: AppColors.orange,
+                        foregroundColor: Colors.white),
                     SizedBox(
                       height: context.height20,
                     ),
-                    SizedBox(
-                      width: double.infinity,
-                      height: context.height20 * 3,
-                      child: ElevatedButton(
-                        style: ButtonStyle(
-                          backgroundColor:
-                              MaterialStateProperty.all(Colors.white),
-                          foregroundColor:
-                              MaterialStateProperty.all(AppColors.orange),
-                          shape: MaterialStateProperty.all(
-                            StadiumBorder(
-                              side: BorderSide(
-                                  color: AppColors.orange,
-                                  width: context.width15 / 10),
-                            ),
-                          ),
-                        ),
-                        onPressed: () {},
-                        child: const Text("Create an Account"),
-                      ),
-                    ),
+                    CustomButtonWidget(
+                        text: "Create an Account",
+                        onTap: () {},
+                        backgroundColor: Colors.white,
+                        foregroundColor: AppColors.orange),
                     const Spacer(),
                   ],
                 ),

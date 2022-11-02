@@ -6,6 +6,7 @@ import 'package:meal_monkey/features/splash/presentation/screens/landingScreen.d
 class Routes {
   static const String initialRoute = '/';
   static const String homeScreen = '/home_screen';
+  static const String landingScreen = '/landing_screen';
   static const String loginScreen = '/login_screen';
 }
 
@@ -13,6 +14,8 @@ class AppRoute {
   static Route? onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
       case Routes.initialRoute:
+        return materialBuilder(widget: const LandingScreen());
+      case Routes.landingScreen:
         return materialBuilder(widget: const LandingScreen());
       case Routes.loginScreen:
         return materialBuilder(widget: const LoginScreen());

@@ -15,7 +15,7 @@ class CustomTextInput extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 50,
+      height: context.height10 * 6,
       decoration: const ShapeDecoration(
         color: AppColors.placeholderBg,
         shape: StadiumBorder(),
@@ -24,10 +24,11 @@ class CustomTextInput extends StatelessWidget {
         decoration: InputDecoration(
           border: InputBorder.none,
           hintText: _hintText,
+          
           hintStyle: const TextStyle(
             color: AppColors.placeholder,
           ),
-          contentPadding: EdgeInsets.all(_padding),
+          contentPadding: EdgeInsets.only(left: _padding),
         ),
       ),
     );
