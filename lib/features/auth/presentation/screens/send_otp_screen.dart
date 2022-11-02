@@ -46,7 +46,7 @@ class SendOTPScreen extends StatelessWidget {
                   text: 'Next',
                   onTap: () {
                     Navigator.of(context)
-                        .pushReplacementNamed(Routes.landingScreen);
+                        .pushReplacementNamed(Routes.newPasswordScreen);
                   },
                   backgroundColor: AppColors.orange,
                   foregroundColor: Colors.white),

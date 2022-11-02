@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meal_monkey/core/utils/app_strings.dart';
 import 'package:meal_monkey/features/auth/presentation/screens/forget_password_screen.dart';
 import 'package:meal_monkey/features/auth/presentation/screens/login_screen.dart';
+import 'package:meal_monkey/features/auth/presentation/screens/new_password_screen.dart';
 import 'package:meal_monkey/features/auth/presentation/screens/send_otp_screen.dart';
 import 'package:meal_monkey/features/auth/presentation/screens/sign_up_screen.dart';
 import 'package:meal_monkey/features/splash/presentation/screens/landingScreen.dart';
@@ -14,6 +15,7 @@ class Routes {
   static const String signUpScreen = '/sign_up_screen';
   static const String forgetPasswordScreen = '/forget_password_screen';
   static const String sendOtpScreen = '/send_otp_screen';
+  static const String newPasswordScreen = '/new_password_screen';
 }
 
 class AppRoute {
@@ -31,6 +33,8 @@ class AppRoute {
         return materialBuilder(widget: const ForgetPasswordScreen());
       case Routes.sendOtpScreen:
         return materialBuilder(widget: const SendOTPScreen());
+      case Routes.newPasswordScreen:
+        return materialBuilder(widget: const NewPasswordScreen());
 
       default:
         return undefinedRoute();
