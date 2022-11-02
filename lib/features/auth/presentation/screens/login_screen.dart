@@ -6,6 +6,7 @@ import 'package:meal_monkey/core/utils/assets_manager.dart';
 import 'package:meal_monkey/core/utils/dimensions.dart';
 import 'package:meal_monkey/core/widgets/customTextInput.dart';
 import 'package:meal_monkey/core/widgets/custom_button_widget.dart';
+import 'package:meal_monkey/features/auth/presentation/screens/forget_password_screen.dart';
 import 'package:meal_monkey/features/auth/presentation/widgets/custom_button_img_widget.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -54,8 +55,8 @@ class LoginScreen extends StatelessWidget {
                   const Spacer(),
                   GestureDetector(
                     onTap: () {
-                      // Navigator.of(context)
-                      //     .pushReplacementNamed(ForgetPwScreen.routeName);
+                      Navigator.of(context)
+                          .pushReplacementNamed(Routes.forgetPasswordScreen);
                     },
                     child: const Text(
                       "Forget your password?",
