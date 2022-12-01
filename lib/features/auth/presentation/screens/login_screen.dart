@@ -4,7 +4,7 @@ import 'package:meal_monkey/core/utils/app_colors.dart';
 import 'package:meal_monkey/core/utils/assets_manager.dart';
 
 import 'package:meal_monkey/core/utils/dimensions.dart';
-import 'package:meal_monkey/core/widgets/customTextInput.dart';
+import 'package:meal_monkey/core/widgets/custom_text_input.dart';
 import 'package:meal_monkey/core/widgets/custom_button_widget.dart';
 import 'package:meal_monkey/features/auth/presentation/widgets/custom_button_img_widget.dart';
 

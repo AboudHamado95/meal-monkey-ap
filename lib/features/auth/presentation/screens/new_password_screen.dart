@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:meal_monkey/config/routes/app_routes.dart';
 import 'package:meal_monkey/core/utils/app_colors.dart';
 import 'package:meal_monkey/core/utils/dimensions.dart';
-import 'package:meal_monkey/core/widgets/customTextInput.dart';
+import 'package:meal_monkey/core/widgets/custom_text_input.dart';
 import 'package:meal_monkey/core/widgets/custom_button_widget.dart';
 
 class NewPasswordScreen extends StatelessWidget {
@@ -41,8 +42,8 @@ class NewPasswordScreen extends StatelessWidget {
                 CustomButtonWidget(
                     text: 'Next',
                     onTap: () {
-                      // Navigator.of(context)
-                      //     .pushReplacementNamed(IntroScreen.routeName);
+                      Navigator.of(context)
+                          .pushReplacementNamed(Routes.introScreen);
                     },
                     backgroundColor: AppColors.orange,
                     foregroundColor: Colors.white),

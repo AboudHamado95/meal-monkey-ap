@@ -3,7 +3,7 @@ import 'package:meal_monkey/core/utils/app_colors.dart';
 import 'package:meal_monkey/core/utils/dimensions.dart';
 
 class CustomTextInput extends StatelessWidget {
-  const CustomTextInput({required String hintText, required padding, Key? key})
+  const CustomTextInput({required String hintText, required double padding, Key? key})
       : _hintText = hintText,
         _padding = padding,
         super(key: key);

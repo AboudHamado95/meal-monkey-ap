@@ -3,7 +3,7 @@ import 'package:meal_monkey/config/routes/app_routes.dart';
 import 'package:meal_monkey/core/utils/app_colors.dart';
 
 import 'package:meal_monkey/core/utils/dimensions.dart';
-import 'package:meal_monkey/core/widgets/customTextInput.dart';
+import 'package:meal_monkey/core/widgets/custom_text_input.dart';
 import 'package:meal_monkey/core/widgets/custom_button_widget.dart';
 
 class ForgetPasswordScreen extends StatelessWidget {

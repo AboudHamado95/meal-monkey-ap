@@ -49,7 +49,7 @@ class LandingScreen extends StatelessWidget {
             ),
             Align(
               alignment: Alignment.center,
-              child: Image.asset(ImgAssets.mealMealMonkeyLogo),
+              child: Image.asset(ImgAssets.mealMonkeyLogo),
             ),
             Align(
               alignment: Alignment.bottomCenter,
